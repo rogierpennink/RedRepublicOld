@@ -1,0 +1,17 @@
+div.forumbutton
+{
+	height: 20px; 
+	min-width: 100px;
+	width: 100px;
+
+	border: solid 1px #000;
+	text-align: center; 
+	
+	cursor: pointer;	
+	background: url( '../images/grad_vert_20.png' );
+	background-repeat: repeat-x; 
+	font-family: Tahoma;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 20px;
+}

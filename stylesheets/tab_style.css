@@ -1,0 +1,43 @@
+/** Tab stuff in here */
+
+div.tab_unselected
+{
+	height: 20px; 
+	position: relative; 
+	border: solid 1px #000; 
+	background: url('../images/grad_vert_20.png'); 
+	background-repeat: repeat-x; 
+	
+	font-family: Tahoma; 
+	font-weight: normal; 
+	font-size: 12px;	
+	line-height: 20px;
+	text-align: center; 
+	float: left;
+
+	margin-right: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+div.tab_selected
+{
+	height: 20px; 
+	position: relative; 
+	border: solid 1px #000; 
+	background: url('../images/grad_invert_20.png'); 
+	background-repeat: repeat-x; 
+	
+	font-family: Tahoma; 
+	font-weight: bold; 
+	font-size: 12px;	
+	line-height: 20px;
+	text-align: center; 
+	float: left;
+
+	margin-right: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+}

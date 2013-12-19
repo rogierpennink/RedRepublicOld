@@ -1,0 +1,487 @@
+/*
+	The Crime Syndicate's general stylesheet which should be included at every
+	page because it defines the main page layout.
+ */
+html
+{
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+}
+
+body
+{
+	height: 100%;
+	width: 100%;
+	background-color: #FFFFE0;
+}
+
+div.maindiv
+{
+	position: relative; 
+	min-height: 100%; 	
+	background-color: #FFFFE0;
+}
+
+div.progressIndicator
+{
+	position: absolute;
+	border: solid 1px #000000;
+	padding: 15px;
+
+	background-color: #FFFFFF;
+	filter: alpha(opacity=70);
+	opacity: .7;
+
+	visibility: hidden;
+
+	width: 200px;
+	height: 20px;
+	right: 0px;
+	bottom: 0px;
+
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #000000;
+
+	z-index: 1000;
+}
+
+div.glasspane
+{
+	visibility: hidden;
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+	height: 100%; 
+	width: 100%;
+
+	background-color: #000;
+	filter: alpha(opacity=70);
+	opacity: .7;
+	z-index: 998;
+}
+
+/**
+ * The usercontainer class will contain the style information for the window on the
+ * glasspane that is going to contain the user list.
+ */
+div.usercontainer
+{
+	visibility: hidden;
+	z-index: 999;	
+	width: 50%;
+	height: 50%;
+	top: 25%;
+	left: 25%;
+	position: absolute;
+	vertical-align: top;
+}
+
+div.headerbar
+{
+	position: relative; 
+	height: 80px; 
+	background-color: #990033;
+	background-image: url('../images/header_grad.png');
+}
+
+div.gradientbar
+{
+	height: 20px; 
+	position: relative; 
+	border-top: solid 1px #000; 
+	border-bottom: solid 1px #000; 
+	background: url('../images/grad_vert_20.png'); 
+	background-repeat: repeat-x; 
+	
+	font-family: Tahoma; 
+	font-weight: bold; 
+	font-size: 12px;	
+	line-height: 20px;
+}
+
+div.linkbarbutton
+{
+	height: 100%; 
+	min-width: 100px;
+	border-right: solid 1px #000;
+	text-align: center; 
+	float: left; 
+	cursor: pointer;	
+	line-height: 20px;
+}
+
+div.leftnavigation
+{
+	position: relative;
+	height: 100%; 
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	width: 201px; 
+	float: left; 
+	background-color: #ffc;		
+}
+
+div.rightcontent
+{
+	position: relative;
+	height: 100%;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+	width: 200px;
+	background-color: #ffc;
+	float: right;	
+}
+
+div.pagecontent
+{
+	position: relative;
+	margin-left: 211px; 
+	padding: 10px;
+	margin-right: 210px;
+	background-color: #FFFFE0;
+}
+
+div.errordisplay
+{
+	padding: 5px;
+	font-family: Tahoma; 
+	color: #990033;
+	font-size: 11px; 
+	border: 1px solid #e3aaaa; 
+	background: #f4dddd;
+	visibility: hidden;
+	display: none;
+	margin-bottom: 15px;
+}
+
+div.notifydisplay
+{
+	padding: 5px;
+	font-family: Tahoma;
+	color: #339933;
+	font-size: 11px;
+	border: solid 1px #339933;
+	background: #ddf4dd;
+	visibility: hidden;
+	display: none;
+	margin-bottom: 15px;
+}
+
+div.title
+{
+	height: 20px; 
+	position: relative; 
+	border: solid 1px #000; 
+	background: url('../images/grad_vert_20.png'); 
+	background-repeat: repeat-x; 
+	
+	font-family: Tahoma; 
+	font-weight: bold; 
+	font-size: 12px;	
+	line-height: 20px;
+}
+
+div.titlegov
+{
+	height: 20px; 
+	position: relative; 
+	border: solid 1px #000; 
+	background-color: #C0DCAD;
+	background-repeat: repeat-x; 
+	
+	font-family: Tahoma; 
+	font-weight: bold; 
+	font-size: 12px;	
+	line-height: 20px;
+	padding-left: 10px;
+}
+
+div.titleblue
+{
+	height: 20px; 
+	position: relative; 
+	border: solid 1px #000; 
+	background-color: #75B9DD;
+	background-repeat: repeat-x; 
+	
+	font-family: Tahoma; 
+	font-weight: bold; 
+	font-size: 12px;	
+	line-height: 20px;
+	padding-left: 10px;
+}
+
+div.titlepaper
+{
+	height: 20px; 
+	position: relative; 
+	border: solid 1px #000; 
+	background-color: #EDF0F1;
+	background-repeat: repeat-x; 
+	
+	font-family: Tahoma; 
+	font-weight: bold; 
+	font-size: 12px;	
+	line-height: 20px;
+	padding-left: 10px;
+}
+
+div.titledeedman
+{
+	height: 20px; 
+	position: relative; 
+	border: solid 1px #000; 
+	background-color: #E2E787;
+	background-repeat: repeat-x; 
+	background: url('../images/forumgrad_vert_20.png'); 
+	
+	font-family: Tahoma; 
+	font-weight: bold; 
+	font-size: 12px;	
+	line-height: 20px;
+	padding-left: 10px;
+}
+
+div.titlerace
+{
+	height: 20px; 
+	position: relative; 
+	border: solid 1px #000; 
+	background-color: #96B3C2;
+	background-repeat: repeat-x; 
+	background: url('../images/grad_vert_20.png'); 
+
+	font-family: Tahoma; 
+	font-weight: bold; 
+	font-size: 12px;	
+	line-height: 20px;
+	padding-left: 10px;
+}
+
+div.contentrace
+{
+	border: 1px solid #000;
+	border-top: none;
+	background-color: #EAE9DB;
+	padding: 10px;
+
+	font-family: Tahoma;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+div.titleraceex
+{
+	height: 20px; 
+	position: relative; 
+	border: solid 1px #000; 
+	background-color: #9599C4;
+	background-repeat: repeat-x; 
+	background: url('../images/grad_vert_20.png'); 
+	
+	font-family: Tahoma; 
+	font-weight: bold; 
+	font-size: 12px;	
+	line-height: 20px;
+	padding-left: 10px;
+}
+
+div.contentraceex
+{
+	border: 1px solid #000;
+	border-top: none;
+	background-color: #E8EABF;
+	padding: 10px;
+
+	font-family: Tahoma;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+div.contentpaper
+{
+	border: 1px solid #000;
+	border-top: none;
+	background-color: #FCFCFC;
+	padding: 10px;
+
+	font-family: Tahoma;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+div.content
+{
+	border: 1px solid #000; 
+	border-top: none;	
+	background-color: #ffc;
+	padding: 10px;
+
+	font-family: Tahoma;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+div.contentblue
+{
+	border: 1px solid #000;
+	border-top: none;
+	background-color: #CCDAEE;
+	padding: 10px;
+
+	font-family: Tahoma;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+div.contentdeedman
+{
+	border: 1px solid #000;
+	border-top: none;
+	background-color: #ECEFAF;
+	padding: 10px;
+
+	font-family: Tahoma;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+div.contentgov
+{
+	border: 1px solid #000; 
+	border-top: none;	
+	background-color: #E8F7E8;
+	padding: 10px;
+
+	font-family: Tahoma;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+div.navcontent
+{	
+	border: solid 1px #990033; 
+	border-top: none;	
+	padding: 10px;
+
+	font-family: Tahoma;
+	font-size: 12px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+	margin-right: 10px; 
+	background-color: #ee9; 
+}
+
+input.std_input
+{
+	border: solid 1px #990033;
+	font-family: Tahoma;
+	font-size: 12px;
+	font-style: italic;
+	color: #990033;
+	background-color: #f4dddd;	
+	margin-bottom: 2px;
+}
+
+textarea.std_input
+{
+	border: solid 1px #990033;
+	font-family: Tahoma;
+	font-size: 12px;
+	font-style: italic;
+	color: #990033;
+	background-color: #f4dddd;	
+	margin-bottom: 2px;
+}
+
+select.std_input
+{
+	border: solid 1px #990033;
+	font-family: Tahoma;
+	font-size: 12px;
+	font-style: italic;
+	color: #990033;
+	background-color: #f4dddd;	
+	margin-bottom: 2px;
+}
+
+input.std_input[type=button]
+{
+	font-size: 11px;
+	font-weight: bold;
+	width: auto;
+	cursor: pointer;
+}
+
+input.std_input[type=submit]
+{
+	font-size: 11px;
+	font-weight: bold;
+	width: auto;
+}
+
+p
+{
+	margin-top: 0px;
+	font-size: 12px;
+	font-family: Tahoma;
+}
+
+h1
+{
+	font-size: 15px;
+	font-family: Tahoma;
+	display: inline;
+	color: #000;
+}
+
+a, a:visited
+{
+	color: #333399;
+}
+
+a:hover
+{
+	color: #990033;
+}
+
+div.iteminfo
+{
+	position: absolute;
+	display: block;
+	z-index: 3000;	
+	background-color: #fee676;
+	min-width: 250px;
+	width: 250px;
+
+	font-family: Arial; 
+	font-weight: bold; 
+	font-size: 13px;
+}
+
+div.row
+{	
+	position: relative; 
+	border-bottom: solid 1px #bb6; 
+	width: 100%;
+	font-family: Tahoma; 
+	font-size: 12px;	
+	line-height: 20px;
+}
+
+table.row
+{
+	position: relative;
+	border-spacing: 1px;
+	width: 100%;
+}
+
+td.field
+{
+	text-align: left;
+	padding-left: 5px;	
+	font-family: Tahoma;
+	font-size: 12px;
+}
